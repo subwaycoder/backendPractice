@@ -105,19 +105,85 @@ table.type04 td {
 </head>
 <body>
 <header>
-	<img src="#images/owl.jpg" alt="header(owl)">
+	<img src="../images/owl.jpg" alt="header(owl)">
 </header>
 <nav>
 	<ul>
 		<div id="navLocator">
-			<li><a href="#login">로그인</a></li>
-			<li><a href="#board">게시판</a></li>
+			<li><a href="#login" onClick="loginPushed()">로그인</a></li>
+			<li><a href="#board" onClick="boardPushed()">게시판</a></li>
 			<li><a href="#shop">아이템 구입</a></li>
 		</div>
 	</ul>
 </nav>
-
 <section>
+<script>
+function boardPushed(){
+	document.getElementById("contentsPanel").innerHTML = 
+'	<table class="type04">'+
+'	<tr>'+
+'		<th>제목</th>'+
+'		<th>내용</th>'+
+'		<th>작성일자</th>'+
+'	<tr>'+
+'		<td>취업 할겁니다.</td>'+
+'		<td>잘 부탁합니다.</td>'+
+'		<td>2017-12-06</td>'+
+'	</tr>'+
+'	<tr>'+
+'		<td>취업 할겁니다.</td>'+
+'		<td>잘 부탁합니다.</td>'+
+'		<td>2017-12-06</td>'+
+'	</tr>'+
+'	<tr>'+
+'		<td>취업 할겁니다.</td>'+
+'		<td>잘 부탁합니다.</td>'+
+'		<td>2017-12-06</td>'+
+'	</tr>'+
+'	<tr>'+
+'		<td>취업 할겁니다.</td>'+
+'		<td>잘 부탁합니다.</td>'+
+'		<td>2017-12-06</td>'+
+'	</tr>'+
+'	<tr>'+
+'		<td>취업 할겁니다.</td>'+
+'		<td>잘 부탁합니다.</td>'+
+'		<td>2017-12-06</td>'+
+'	</tr>'+
+'	<tr>'+
+'		<td>취업 할겁니다.</td>'+
+'		<td>잘 부탁합니다.</td>'+
+'		<td>2017-12-06</td>'+
+'	</tr>'+
+'	<tr>'+
+'		<td>취업 할겁니다.</td>'+
+'		<td>잘 부탁합니다.</td>'+
+'		<td>2017-12-06</td>'+
+'	</tr>'+
+'	<tr>'+
+'		<td>취업 할겁니다.</td>'+
+'		<td>잘 부탁합니다.</td>'+
+'		<td>2017-12-06</td>'+
+'	</tr>'+
+'	<tr>'+
+'		<td>취업 할겁니다.</td>'+
+'		<td>잘 부탁합니다.</td>'+
+'		<td>2017-12-06</td>'+
+'	</tr>'+
+'	<tr>'+
+'		<td>취업 할겁니다.</td>'+
+'		<td>잘 부탁합니다.</td>'+
+'		<td>2017-12-06</td>'+
+'	</tr>'+
+'</table>'+
+'<button class="button boardWriteButton">글쓰기</button>'+
+'<button class="button boardSearchButton">검색</button>';
+}
+
+function loginPushed(){
+	document.getElementById("contentsPanel").innerHTML = "<p>로그인 페이지</p>";
+}
+</script>
 <div id="contentsPanel">
 <table class="type04">
 	<tr>
