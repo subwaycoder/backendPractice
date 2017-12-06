@@ -112,7 +112,7 @@ table.type04 td {
 		<div id="navLocator">
 			<li><a href="#login" onClick="loginPushed()">로그인</a></li>
 			<li><a href="#board" onClick="boardPushed()">게시판</a></li>
-			<li><a href="#shop">아이템 구입</a></li>
+			<li><a href="#shop" onClick="ItemPushed()">아이템 구입</a></li>
 		</div>
 	</ul>
 </nav>
@@ -185,10 +185,9 @@ function loginPushed(){
 }
 
 function ItemPushed(){
-	document.getElementById("contentsPanel").innerHTML = "<p>아이템 구매 페이지</p>";
+	document.getElementById("contentsPanel").innerHTML = "<p>아이템 구매 페이지 </p>";
 }
 </script>
-
 <div id="contentsPanel">
 <table class="type04">
 	<tr>
