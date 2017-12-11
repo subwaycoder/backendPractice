@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <style>
 body {
 	margin: 0;
@@ -123,65 +124,7 @@ table.type04 td {
 <section>
 <script>
 function boardPushed(){
-	document.getElementById("contentsPanel").innerHTML = 
-'	<table class="type04">'+
-'	<tr>'+
-'		<th>제목</th>'+
-'		<th>내용</th>'+
-'		<th>작성일자</th>'+
-'	<tr>'+
-'		<td>취업 할겁니다.</td>'+
-'		<td>잘 부탁합니다.</td>'+
-'		<td>2017-12-06</td>'+
-'	</tr>'+
-'	<tr>'+
-'		<td>취업 할겁니다.</td>'+
-'		<td>잘 부탁합니다.</td>'+
-'		<td>2017-12-06</td>'+
-'	</tr>'+
-'	<tr>'+
-'		<td>취업 할겁니다.</td>'+
-'		<td>잘 부탁합니다.</td>'+
-'		<td>2017-12-06</td>'+
-'	</tr>'+
-'	<tr>'+
-'		<td>취업 할겁니다.</td>'+
-'		<td>잘 부탁합니다.</td>'+
-'		<td>2017-12-06</td>'+
-'	</tr>'+
-'	<tr>'+
-'		<td>취업 할겁니다.</td>'+
-'		<td>잘 부탁합니다.</td>'+
-'		<td>2017-12-06</td>'+
-'	</tr>'+
-'	<tr>'+
-'		<td>취업 할겁니다.</td>'+
-'		<td>잘 부탁합니다.</td>'+
-'		<td>2017-12-06</td>'+
-'	</tr>'+
-'	<tr>'+
-'		<td>취업 할겁니다.</td>'+
-'		<td>잘 부탁합니다.</td>'+
-'		<td>2017-12-06</td>'+
-'	</tr>'+
-'	<tr>'+
-'		<td>취업 할겁니다.</td>'+
-'		<td>잘 부탁합니다.</td>'+
-'		<td>2017-12-06</td>'+
-'	</tr>'+
-'	<tr>'+
-'		<td>취업 할겁니다.</td>'+
-'		<td>잘 부탁합니다.</td>'+
-'		<td>2017-12-06</td>'+
-'	</tr>'+
-'	<tr>'+
-'		<td>취업 할겁니다.</td>'+
-'		<td>잘 부탁합니다.</td>'+
-'		<td>2017-12-06</td>'+
-'	</tr>'+
-'</table>'+
-'<button class="button boardWriteButton">글쓰기</button>'+
-'<button class="button boardSearchButton">검색</button>';
+	$('#contentsPanel').load('A.html');
 }
 
 function loginPushed(){
