@@ -101,6 +101,10 @@ table.type04 td {
     background-color: rgb(0, 128, 255);
     color: white;
 }
+
+.boardSearchButton {
+	float : right;
+}
 </style>
 </head>
 <body>
@@ -112,7 +116,7 @@ table.type04 td {
 		<div id="navLocator">
 			<li><a href="#login" onClick="loginPushed()">로그인</a></li>
 			<li><a href="#board" onClick="boardPushed()">게시판</a></li>
-			<li><a href="#shop" onClick="ItemPushed()">아이템 구입</a></li>
+			<li><a href="#shop" onClick="itemPushed()">아이템 구입</a></li>
 		</div>
 	</ul>
 </nav>
@@ -184,70 +188,24 @@ function loginPushed(){
 	document.getElementById("contentsPanel").innerHTML = "<p>로그인 페이지</p>";
 }
 
-function ItemPushed(){
+function itemPushed(){
 	document.getElementById("contentsPanel").innerHTML = "<p>아이템 구매 페이지 </p>";
+}
+
+function writePushed(){
+	document.getElementById("contentsPanel").innerHTML = "";
 }
 </script>
 <div id="contentsPanel">
-<table class="type04">
-	<tr>
-		<th>제목</th>
-		<th>내용</th>
-		<th>작성일자</th>
-	</tr>
-	<tr>
-		<td>취업 할겁니다.</td>
-		<td>잘 부탁합니다.</td>
-		<td>2017-12-06</td>
-	</tr>
-	<tr>
-		<td>취업 할겁니다.</td>
-		<td>잘 부탁합니다.</td>
-		<td>2017-12-06</td>
-	</tr>
-	<tr>
-		<td>취업 할겁니다.</td>
-		<td>잘 부탁합니다.</td>
-		<td>2017-12-06</td>
-	</tr>
-	<tr>
-		<td>취업 할겁니다.</td>
-		<td>잘 부탁합니다.</td>
-		<td>2017-12-06</td>
-	</tr>
-	<tr>
-		<td>취업 할겁니다.</td>
-		<td>잘 부탁합니다.</td>
-		<td>2017-12-06</td>
-	</tr>
-	<tr>
-		<td>취업 할겁니다.</td>
-		<td>잘 부탁합니다.</td>
-		<td>2017-12-06</td>
-	</tr>
-	<tr>
-		<td>취업 할겁니다.</td>
-		<td>잘 부탁합니다.</td>
-		<td>2017-12-06</td>
-	</tr>
-	<tr>
-		<td>취업 할겁니다.</td>
-		<td>잘 부탁합니다.</td>
-		<td>2017-12-06</td>
-	</tr>
-	<tr>
-		<td>취업 할겁니다.</td>
-		<td>잘 부탁합니다.</td>
-		<td>2017-12-06</td>
-	</tr>
-	<tr>
-		<td>취업 할겁니다.</td>
-		<td>잘 부탁합니다.</td>
-		<td>2017-12-06</td>
-	</tr>
-</table>
-<button class="button boardWriteButton">글쓰기</button>
-<button class="button boardSearchButton">검색</button>
+<form action="">
+  제 목:<br>
+  <textarea name="title" style="width:100%; height:20px;"></textarea>
+  <br>
+  내 용:<br>
+  <textarea name="contents" style="width:100%; height:400px;"></textarea>
+  <br>
+  <input type="submit" value="쓰기">
+</form> 
 </div>
 </section>
 </body>
