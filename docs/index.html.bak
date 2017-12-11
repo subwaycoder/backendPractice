@@ -1,115 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<style>
-body {
-	margin: 0;
-}
-header {
-	position: relative;
-	width: 100%;
-	height: 500px;
-	overflow: hidden;
-}
-header img {
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 50%;
-	transform: translateX(-50%);
-}
 
-/****************************** navigator ******************************/
-nav ul {	
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	list-style-type: none;
-	margin: 0;
-	padding: 15px 0;
-	Background-color: white;
-	z-index: 1;
-	border-bottom: 1px solid gray;
-}
-#navLocator {
-	position: relative;
-	right: 5%;
-}
-nav li {
-	float: right;
-}
-nav li a {
-	display: inline;
-	font-weight: bold;
-	display: block;
-	color: black;
-	text-align: center;
-	padding: 5px 15px;
-	text-decoration: none;
-	color: black;
-}
-nav li a:hover {
-	color: rgb(0, 128, 255);
-}
-
-/****************************** board ******************************/
-#contentsPanel{
-	width: 800px;
-	margin : 30px auto;
-}
-table.type04 {
-	width: 100%;
-	border-collapse: separate;
-	border-spacing: 1px;
-	text-align: left;
-	line-height: 1.5;
-	border-top: 1px solid #ccc;
-}
-table.type04 th {
-	width: 20%;
-	padding: 10px;
-	font-weight: bold;
-	vertical-align: top;
-	border-bottom: 1px solid #ccc;
-}
-table.type04 td {
-	width: 40%;
-	padding: 10px;
-	vertical-align: top;
-	border-bottom: 1px solid #ccc;
-}
-
-.button {
-    padding: 8px 16px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-	border-radius: 5px;
-	
-	background-color: white; 
-    color: black; 
-    border: 2px solid rgb(0, 128, 255);
-}
-
-.button:hover {
-    background-color: rgb(0, 128, 255);
-    color: white;
-}
-
-.boardSearchButton {
-	float : right;
-}
-</style>
 </head>
 <body>
 <header>
+	<script  src="http://code.jquery.com/3.2.1.min.js"></script>
 	<img src="images/owl.jpg" alt="header(owl)">
 </header>
 <nav>
@@ -124,7 +20,7 @@ table.type04 td {
 <section>
 <script>
 function boardPushed(){
-	$('#contentsPanel').load('A.html');
+	$('#contentsPanel').load('./page/board.html');
 }
 
 function loginPushed(){
