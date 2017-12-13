@@ -91,7 +91,7 @@
         <div class="box">
             <h4>로그인</h4>
             <ul>
-                <li><input type="text" alt="아이디" placeholder="관리자 아이디"></li>
+                <li><input type="text" alt="아이디" placeholder="아이디"></li>
                 <li><input type="password" alt="비밀번호" placeholder="비밀번호"></li>
             </ul>
             <p>
